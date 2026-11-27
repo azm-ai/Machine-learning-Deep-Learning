@@ -12,10 +12,11 @@ These notebooks were created for the **AI for Everyone** students, but anyone st
 
 | # | Topic | Type | Dataset | Open |
 |---|---|---|---|---|
-| 1 | [Linear Regression](linear_regression) | Regression | `Housing.csv` | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/azm-ai/Machine-learning-Deep-Learning/blob/main/linear_regression/Linear_Regression_Housing_AI_for_Everyone.ipynb) |
-| 2 | [Polynomial Regression](Polynomial_regression) | Regression | `Salary_Data.csv` | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/azm-ai/Machine-learning-Deep-Learning/blob/main/Polynomial_regression/Polynomial_Regression_Salary_AI_for_Everyone.ipynb) |
-| 3 | [Logistic Regression](logistic_regression) | Classification | `diabetes.csv` | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/azm-ai/Machine-learning-Deep-Learning/blob/main/logistic_regression/Logistic_Regression_Diabetes_AI_for_Everyone.ipynb) |
-| 4 | [KNN Classifier](knn_classifier) | Classification | `diabetes.csv` | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/azm-ai/Machine-learning-Deep-Learning/blob/main/knn_classifier/KNN_Classifier_Diabetes_AI_for_Everyone.ipynb) |
+| 1 | [Linear Regression](01-a-Linear-Regression) | Regression | `Housing.csv` | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/azm-ai/Machine-learning-Deep-Learning/blob/main/01-a-Linear-Regression/Linear_Regression_Housing_AI_for_Everyone.ipynb) |
+| 2 | [Polynomial Regression](01-b-Polynomial-Regression) | Regression | `Salary_Data.csv` | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/azm-ai/Machine-learning-Deep-Learning/blob/main/01-b-Polynomial-Regression/Polynomial_Regression_Salary_AI_for_Everyone.ipynb) |
+| 3 | [Logistic Regression](02-Logistic-Regression) | Classification | `diabetes.csv` | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/azm-ai/Machine-learning-Deep-Learning/blob/main/02-Logistic-Regression/Logistic_Regression_Diabetes_AI_for_Everyone.ipynb) |
+| 4 | [KNN Classifier](03-KNN-Classifier) | Classification | `diabetes.csv` | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/azm-ai/Machine-learning-Deep-Learning/blob/main/03-KNN-Classifier/KNN_Classifier_Diabetes_AI_for_Everyone.ipynb) |
+| 5 | [Decision Tree Classifier](04-a-Decision-Tree-Classifier) | Multi-class Classification | `Iris.csv` | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/azm-ai/Machine-learning-Deep-Learning/blob/main/04-a-Decision-Tree-Classifier/Decision_Tree_Iris_AI_for_Everyone.ipynb) |
 
 More topics will be added over time.
 
@@ -55,6 +56,16 @@ More topics will be added over time.
 - Choosing K with Cross Validation, and `uniform` vs `distance` weights
 - Head-to-head comparison with Logistic Regression
 - Viewing a new patient's actual nearest neighbors from the saved model
+
+### 5. Decision Tree Classifier: Iris flower species 🌳
+- How a Decision Tree asks question after question, like the "20 questions" game
+- Multi-class classification with three flower species
+- Gini Impurity calculated by hand to see how the tree picks its best question
+- Why trees need no feature scaling (same accuracy with and without it)
+- Overfitting and pruning with `max_depth` and `min_samples_leaf`, shown on decision boundaries
+- `GridSearchCV` to test 48 hyperparameter combinations at once, then choosing the simplest model within 1% of the best
+- Reading the tree as a diagram and as plain if-else rules, plus feature importance
+- **Result:** 96.7% test accuracy with a depth-3 tree, model and label encoder exported as a `.pkl` that also explains the path behind each prediction
 
 > ⚠️ The diabetes notebooks are for learning only. A real diagnosis needs a doctor and lab tests.
 
